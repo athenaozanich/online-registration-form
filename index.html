@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Athena Ozanich's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+</head>
+  <body> 
+
+    <!--Header section-->
+
+    <header>
+      <h1>The Code Review</h1>
+    </header>
+
+    <main>
+
+      <section>
+        <h2>Sign up for our news letter</h2>
+        <p>Get the latest nesw on how your code is doing right in your inbox</p>
+      </section>
+
+      <!--Main body of form-->
+
+      <form>
+
+        <!--Contact section of the form-->
+
+        <fieldset>
+          <legend><h2>Contact Information</h2></legend>
+
+          <label for="name">Full Name</label>
+          <input id="name" type="text" name="name" placeholder="Required">
+
+          <label for="email">Email Address</label>
+          <input id="email" type="email" name="email" placeholder="Required">
+
+          <label for="phone-number">Phone Number</label>
+          <input id="phone-number" type="tel" name="phone-number">
+
+          <label for="address">Street Address</label>
+          <input id="address" type="text" name="address">
+
+          <label for="city">City</label>
+          <input id="city" type="text" name="city">
+
+          <!--Select and its corresponding options and label-->
+
+          <label for="name">State</label>
+          <select id="state" name="state">
+            <option value="" disabled selected >Choose State</option>
+            <option>Ohio</option>
+            <option>Michigan</option>
+            <option>New York</option>
+            <option>Florida</option>
+          </select>
+
+          <label>Zip Code</label>
+          <input id="zip" type="text" name="zip">
+        </fieldset>
+
+
+      <!--Newsletter section of the form.-->
+
+
+        <fieldset id="newsletter">
+        <legend><h2>Newsletter</h2></legend>
+        <p>Select the newsletters you would like to recieve.</p>
+
+        <!--Checkboxes-->
+
+        <input id="html" type="checkbox" name="html">
+        <label for="html">Html Newsletter</label>
+
+        <input id="css" type="checkbox" name="css">
+        <label for="css">Css Newsletter</label>
+
+        <input id="jscript" type="checkbox" name="javascript">
+        <label for="jscript">Javascript Newsletter</label>
+
+        <p>Newsletter format prefernce.</p>
+
+        <!--Radio buttons-->
+
+        <input id="html-format" type="radio" name="format-choice" value="html">
+        <label for="html">Html</label>
+ 
+        <input id="plain-text" type="radio" name="format-choice" value="plain-text">
+        <label for="html">Plain Text</label>
+
+        <p>Other topics you'd like to hear about.</p>
+
+        <!--Textarea and label-->
+
+        <label></label>
+        <textarea></textarea>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+
+      <!--End form-->
+
+    </main>
+
+    <footer>
+      <p>Copyright The Code Review</p>
+    </footer>
+
+  </body>
+
+</html>

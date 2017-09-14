@@ -1,0 +1,155 @@
+/* Global Layout Set-up */
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Special+Elite');
+
+* { 
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  font-family: 'Special Elite', cursive;
+  color: #3d3d3d;
+  background: white;
+  width:100%;
+}
+
+
+  /*Styles for text*/
+h1{
+  font-family: 'Merriweather', serif;
+  font-size: 2em;
+  margin: 0%;
+}
+h2{
+  font-family: 'Merriweather', serif;
+  font-size: 1.25em;
+  margin: 0%;
+  color:#2d3945;
+}
+
+/*Styles for content*/
+header{
+  background:#2d3945;
+  color:white;
+  height:75px;
+  padding:3%;
+  margin-bottom: 25px;
+}
+section{
+  border-bottom: 5px solid #2d3945;
+  width:90%;
+  margin:auto;
+}
+
+/*Global form styles*/
+fieldset{
+  border:none;
+  margin-top:25px; 
+  border-bottom: 2px solid #2d3945;
+  margin-top: 3px;
+}
+
+form{
+  width: 90%;
+  margin: auto;
+  border-top: 2px solid #2d3945;
+  margin-top: 3px;
+}
+label{
+  display:block;
+  float:left;
+  padding: 2px;
+  color:#4b6580;
+}
+input, select{
+  display: block;
+  margin: auto;
+  margin-bottom:15px;
+  padding: 5px;
+  width: 100%;
+  height: 30px;
+  background: #efefef;
+  color: black;
+  border-radius: 5px;
+  clear: both;
+}
+input:focus{
+  background:#fff;
+  outline:none;
+}
+option{
+  overflow: scroll;
+}
+/*Styles for newletter section of form*/
+#newsletter{
+  margin-top:25px; 
+  margin-top: 3px;
+  border-bottom: none;
+}
+#newsletter input{
+  width:initial;
+  margin:initial;
+  float:left;
+  height: 20px;
+  margin-bottom: 15px;
+}
+
+#newsletter p{
+  clear: both;
+  display: block;
+}
+textarea{
+  display: block;
+  width: 100%;
+  height:100px;
+  background: #efefef;
+  color: black;
+  border-radius: 5px;
+}
+button{
+  background: #4b6580;
+  color: black;
+  border-radius: 5px;
+  width:95%;
+  padding:5%;
+}
+
+  /* Styles for larger screens */
+
+@media screen and (min-width: 550px) {
+
+  /*Header and Nav restyling*/
+  main{
+    max-width: 600px;
+    margin:auto;
+  }
+  form{
+    text-align: left;
+  }
+  label{
+    float:left;
+    padding: 2px;
+    color:#4b6580;
+    clear: right;
+    margin-top: 10px;
+  }
+  input, select{
+    float:right;
+    margin: auto;
+    margin-bottom:15px;
+    width: 50%;
+    height: 30px;
+    background: #efefef;
+    color: black;
+    border-radius: 5px;
+    clear:none;
+  }
+  #newsletter label{
+    margin-top: 0px;
+  }
+  #newsletter input{
+    clear: left;
+  }
+  button{
+    margin-left: 2.5%
+  }
+}

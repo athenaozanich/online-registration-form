@@ -7,8 +7,8 @@
 body {
   text-align: center;
   font-family: 'Special Elite', cursive;
-  color: #3d3d3d;
-  background: white;
+  color: #a3a3a3;
+  background: #2c2c2c;
   width:100%;
 }
 
@@ -23,19 +23,20 @@ h2{
   font-family: 'Merriweather', serif;
   font-size: 1.25em;
   margin: 0%;
-  color:#2d3945;
+  padding-top:15px;
+  color:#fff;
 }
 
 /*Styles for content*/
 header{
-  background:#2d3945;
+  background:#354658;
   color:white;
   height:75px;
   padding:3%;
   margin-bottom: 25px;
 }
 section{
-  border-bottom: 5px solid #2d3945;
+  border-bottom: 5px solid #354658;
   width:90%;
   margin:auto;
 }
@@ -44,23 +45,23 @@ section{
 fieldset{
   border:none;
   margin-top:25px; 
-  border-bottom: 2px solid #2d3945;
+  border-bottom: 2px solid #354658;
   margin-top: 3px;
 }
 
 form{
   width: 90%;
   margin: auto;
-  border-top: 2px solid #2d3945;
+  border-top: 2px solid #354658;
   margin-top: 3px;
 }
 label{
   display:block;
   float:left;
   padding: 2px;
-  color:#4b6580;
+  color:#6e94bb;
 }
-input, select{
+input, select, option, textarea, button{
   display: block;
   margin: auto;
   margin-bottom:15px;
@@ -71,10 +72,18 @@ input, select{
   color: black;
   border-radius: 5px;
   clear: both;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
-input:focus{
+input:focus, select:focus, option:focus, textarea:focus, button:focus{
   background:#fff;
+  color:black;
   outline:none;
+  border:3px solid #6e94bb;
+  box-shadow: -5px 5px 15px #6e94bb;
+  border: 1px solid #6e94bb;
 }
 option{
   overflow: scroll;
@@ -106,11 +115,12 @@ textarea{
   border-radius: 5px;
 }
 button{
-  background: #4b6580;
-  color: black;
+  background: #354658;
+  color: white;
   border-radius: 5px;
   width:95%;
   padding:5%;
+  border: 2px solid #6e94bb;
 }
 
   /* Styles for larger screens */
@@ -128,7 +138,6 @@ button{
   label{
     float:left;
     padding: 2px;
-    color:#4b6580;
     clear: right;
     margin-top: 10px;
   }

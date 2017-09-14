@@ -26,7 +26,7 @@
 
       <!--Main body of form-->
 
-      <form>
+      <form action="#" method="post">
 
         <!--Contact section of the form-->
 
@@ -34,19 +34,19 @@
           <legend><h2>Contact Information</h2></legend>
 
           <label for="name">Full Name</label>
-          <input id="name" type="text" name="name" placeholder="Required">
+          <input id="name" type="text" name="name" placeholder="This field is required" required>
 
           <label for="email">Email Address</label>
-          <input id="email" type="email" name="email" placeholder="Required">
+          <input id="email" type="email" name="email" placeholder="This field is required" required>
 
           <label for="phone-number">Phone Number</label>
-          <input id="phone-number" type="tel" name="phone-number">
+          <input id="phone-number" type="tel" name="phone-number" placeholder="(xxx)xxx-xxxx">
 
           <label for="address">Street Address</label>
-          <input id="address" type="text" name="address">
+          <input id="address" type="text" name="address" placeholder="1234 Elm Street">
 
           <label for="city">City</label>
-          <input id="city" type="text" name="city">
+          <input id="city" type="text" name="city" placeholder="Haven">
 
           <!--Select and its corresponding options and label-->
 
@@ -60,7 +60,7 @@
           </select>
 
           <label>Zip Code</label>
-          <input id="zip" type="text" name="zip">
+          <input id="zip" type="text" name="zip" placeholder="xxxxx">
         </fieldset>
 
 
@@ -96,8 +96,8 @@
 
         <!--Textarea and label-->
 
-        <label></label>
-        <textarea></textarea>
+        <label for="message"></label>
+        <textarea id="message" name="message" placeholder="Type your messaage here."></textarea>
         </fieldset>
         <button type="submit">Submit</button>
       </form>

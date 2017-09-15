@@ -86,7 +86,8 @@ input:focus, select:focus, option:focus, textarea:focus, button:focus {
   border: 1px solid #6e94bb;
 }
 option {
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 /*Styles for newletter section of form*/
 #newsletter {

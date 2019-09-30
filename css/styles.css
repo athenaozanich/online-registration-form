@@ -1,15 +1,16 @@
 /* Global Layout Set-up */
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Special+Elite');
 
-* { 
+* {
   box-sizing: border-box;
 }
 body {
   text-align: center;
   font-family: 'Special Elite', cursive;
   color: #a3a3a3;
-  background: #2c2c2c;
+  background: #1c1c1c;
   width:100%;
+  overflow: hidden;
 }
 
 
@@ -44,7 +45,7 @@ section {
 /*Global form styles*/
 fieldset {
   border:none;
-  margin-top:25px; 
+  margin-top:25px;
   border-bottom: 2px solid #354658;
   margin-top: 3px;
 }
@@ -91,7 +92,7 @@ option {
 }
 /*Styles for newletter section of form*/
 #newsletter {
-  margin-top:25px; 
+  margin-top:25px;
   margin-top: 3px;
   border-bottom: none;
 }
@@ -160,5 +161,20 @@ button {
   }
   button {
     margin-left: 2.5%
+  }
+}
+form, h1, h2, p {
+  animation: puff-in-center 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+@keyframes puff-in-center {
+  0% {
+    transform: scale(1.25);
+    filter: blur(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
   }
 }

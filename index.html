@@ -4,10 +4,11 @@
   <meta charset="utf-8">
   <title>Athena Ozanich's Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Online registration form, HTML, CSS, Mobile First">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-  <body> 
+  <body>
 
     <!--Header section-->
 
@@ -32,24 +33,24 @@
           <legend><h2>Contact Information</h2></legend>
 
           <label for="name">Full Name</label>
-          <input id="name" type="text" name="name" placeholder="This field is required" required>
+          <input id="name" aria-label="name" type="text" name="name" placeholder="This field is required" required>
 
           <label for="email">Email Address</label>
-          <input id="email" type="email" name="email" placeholder="This field is required" required>
+          <input id="email" aria-label="email" type="email" name="email" placeholder="This field is required" required>
 
           <label for="phone-number">Phone Number</label>
-          <input id="phone-number" type="tel" name="phone-number" placeholder="(xxx)xxx-xxxx">
+          <input id="phone-number" aria-label="phone-number" type="tel" name="phone-number" placeholder="(xxx)xxx-xxxx">
 
           <label for="address">Street Address</label>
-          <input id="address" type="text" name="address" placeholder="1234 Elm Street">
+          <input id="address" aria-label="address" type="text" name="address" placeholder="1234 Elm Street">
 
           <label for="city">City</label>
-          <input id="city" type="text" name="city" placeholder="Haven">
+          <input id="city" aria-label="city" type="text" name="city" placeholder="Haven">
 
           <!--Select and its corresponding options and label-->
 
           <label for="state">State</label>
-          <select id="state" name="state">
+          <select id="state" aria-label="state" name="state">
             <option value="" disabled selected >Choose State</option>
             <option>Ohio</option>
             <option>Michigan</option>
@@ -58,7 +59,7 @@
           </select>
 
           <label for="zip">Zip Code</label>
-          <input id="zip" type="text" name="zip" placeholder="xxxxx">
+          <input id="zip" aria-label="zip" type="text" name="zip" placeholder="xxxxx">
         </fieldset>
 
 
@@ -71,23 +72,23 @@
 
           <!--Checkboxes-->
 
-          <input id="html" type="checkbox" name="html">
+          <input id="html" aria-label="html" type="checkbox" name="html">
           <label for="html">Html Newsletter</label>
 
-          <input id="css" type="checkbox" name="css">
+          <input id="css" aria-label="css" type="checkbox" name="css">
           <label for="css">Css Newsletter</label>
 
-          <input id="jscript" type="checkbox" name="javascript">
+          <input id="jscript" aria-label="jscript" type="checkbox" name="javascript">
           <label for="jscript">Javascript Newsletter</label>
 
           <p>Newsletter format prefernce.</p>
 
           <!--Radio buttons-->
 
-          <input id="html-format" type="radio" name="format-choice" value="html">
+          <input id="html-format" aria-label="html-format" type="radio" name="format-choice" value="html">
           <label for="html-format">Html</label>
-   
-          <input id="plain-text" type="radio" name="format-choice" value="plain-text">
+
+          <input id="plain-text" aria-label="plain-text" type="radio" name="format-choice" value="plain-text">
           <label for="plain-text">Plain Text</label>
 
           <p>Other topics you'd like to hear about.</p>
@@ -95,7 +96,7 @@
           <!--Textarea and label-->
 
           <label for="message"></label>
-          <textarea id="message" name="message" placeholder="Type your messaage here."></textarea>
+          <textarea id="message" aria-label="message" name="message" placeholder="Type your messaage here."></textarea>
         </fieldset>
         <button type="submit">Submit</button>
       </form>

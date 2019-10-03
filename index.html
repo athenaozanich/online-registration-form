@@ -24,9 +24,7 @@
       </section>
 
       <!--Main body of form-->
-
-      <form method="POST" action="https://script.google.com/macros/s/AKfycbzVXiKwtEi89ZtOC0Ez_UiPmzDeLlYLqetn4EiDJWHjhXs25Kw/exec">
-
+      <form class="gform" action="https://script.google.com/macros/s/AKfycbzVXiKwtEi89ZtOC0Ez_UiPmzDeLlYLqetn4EiDJWHjhXs25Kw/exec" method="POST">
         <!--Contact section of the form-->
       <div class="form-elements">
         <fieldset>
@@ -36,10 +34,10 @@
           <input id="name" aria-label="name" type="text" name="name" placeholder="This field is required" required>
 
           <label for="email">Email Address</label>
-          <input id="email" aria-label="email" type="email" name="email" placeholder="This field is required" required>
+          <input id="email" aria-label="email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="This field is required" required>
 
           <label for="phone-number">Phone Number</label>
-          <input id="phone-number" aria-label="phone-number" type="tel" name="phone-number" placeholder="(xxx)xxx-xxxx">
+          <input id="phone-number" aria-label="phone-number" type="tel" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="xxx-xxx-xxxx" placeholder="(xxx)xxx-xxxx">
 
           <label for="address">Street Address</label>
           <input id="address" aria-label="address" type="text" name="address" placeholder="1234 Elm Street">
@@ -58,8 +56,8 @@
             <option>Florida</option>
           </select>
 
-          <label for="zip">Zip Code</label>
-          <input id="zip" aria-label="zip" type="text" name="zip" placeholder="xxxxx">
+          <label for="postal-code">Postal Code</label>
+          <input id="postal-code" aria-label="postal-code" type="text" name="postal-code" placeholder="xxxxx">
         </fieldset>
 
 
@@ -109,7 +107,7 @@
     <footer>
       <p>Copyright The Code Review</p>
     </footer>
-      <script data-cfasync="false" src="js/email-handler.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
   </body>
 
 </html>
